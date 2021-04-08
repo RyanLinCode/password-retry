@@ -11,9 +11,8 @@ while True:
 	if pwd == password:
 		print('登入成功：')
 		break
-	elif j == 0:
-		break
-
 	else:
 		j = j - 1
 		print('密碼錯誤! 還有', j ,'次機會!')
+		if j == 0:
+			break
